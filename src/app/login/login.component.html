@@ -25,11 +25,17 @@
              placeholder="escribe tu contraseña">
          </div>
             <button type="submit" >Iniciar sesión </button>
-            <p 
+            <!-- <p 
             *ngIf="message"
             >
             {{message}}
-        </p>
+
+           
+        </p> -->
+         <!-- otra opcion usando la directiva @if -->
+         @if(message){
+            <p class="message">{{message}}</p>
+         }
         </form>
 
     </section>

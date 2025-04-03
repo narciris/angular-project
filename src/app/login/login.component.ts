@@ -16,7 +16,7 @@ export class LoginComponent {
 
   onLogin() : void{
 
-    if(this.username === 'narcirs.mena@example.co' && this.password === '1234'){
+    if(this.username === 'narciris.mena@example.co' && this.password === '1234'){
       this.islogged = true;
       this.message = "logeado con exito"
     }else{
