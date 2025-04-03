@@ -67,6 +67,24 @@ un componente prodria definirse como una clase con una serie de propiedades
 puedes llamar un componente dentro de otro componenete
  y tambien usar directivas para crear funcionalidades dentro del mismo
 
+ ### Estructura de un componente
+
+ un componente en Angular tiene tres partes princpales el HTML
+ vista (CSS), y la logica TYPESCRIPT (logica)
+
+ usar el decorador component para definir un componente y su metadato( selector, template, estilos)
+
+ #### Bindig
+ - Data Bindig: vincula datos entre el componente y la visa
+ - interpolación: {{variable}}
+ - property Bindig [propiedad] = "valor"
+ - Event Bindig: (evento)= "funcion()"
+ - Two-way Bindig: [(ngModel)]="variable"
+
+ #### Las directivas 
+ @Input() sirve para pasar datos de un componente padre a un hijo
+ @Ouput() sirve para emitir eventos desde un component hijo a uno padre
+
  para llamar un componente tienes que tener en cuenta el nombre del selecto
  ``` sh
  selector: 'app-header',
@@ -81,6 +99,10 @@ puedes llamar un componente dentro de otro componenete
  immport, los insumos que usaras en el componente
  templateUrl, es el html que puede llamar d emanara independiente asociado al compoentne
  syleUrl hace referencia a los estilos
+
+ #### Crear variables
+
+ en un componente puedes crear variables y llamarlas en tu compoente Html
 
 ### 🔹 Crear un módulo
 ```sh
