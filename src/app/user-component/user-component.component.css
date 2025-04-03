@@ -1,0 +1,22 @@
+section{
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 32px;
+    font-size: 24px;
+}
+
+img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+button{
+    background-color: blue;
+    color: blanchedalmond;
+    border-radius: 12%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+button:hover{
+    background-color: beige;
+    color: blue;
+}
