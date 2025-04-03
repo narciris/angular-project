@@ -98,7 +98,16 @@ puedes llamar un componente dentro de otro componenete
  standlone hacer el componente sea independiente y no necesite de un modulo
  immport, los insumos que usaras en el componente
  templateUrl, es el html que puede llamar d emanara independiente asociado al compoentne
- syleUrl hace referencia a los estilos
+ syleUrl hace referencia a los estilos 
+
+ ### Evitar Tests o styles y html usar dry-run
+
+ podemos evitar que angular cree otros elemtos asociados a un component cuando usamos ng generate component
+
+ --inline-style / evita archivo de estilos
+ --inline-template / evita template de html
+ --skip-tests / evita archivo de test
+ --dry-run / te permite ver como quedaria antes de implementar los comandos
 
  #### Crear variables
 
