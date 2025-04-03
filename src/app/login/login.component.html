@@ -1,0 +1,35 @@
+
+<h1>PeerCash </h1>
+    <section>
+        
+
+        <form 
+        (submit)="onLogin()"
+        
+         >
+            <div class="form-username">
+            <label for="username">Username</label>
+            <input type="email"
+             name="username"
+             [(ngModel)]="username"
+              id="un" 
+              placeholder="Escribe tu usuario">
+        </div>
+         <div class="form-password">
+             <label for="password">Contraseña</label>
+             <input 
+             type="password" 
+             name="password" 
+             [(ngModel)]="password"
+             id="pd" 
+             placeholder="escribe tu contraseña">
+         </div>
+            <button type="submit" >Iniciar sesión </button>
+            <p 
+            *ngIf="message"
+            >
+            {{message}}
+        </p>
+        </form>
+
+    </section>

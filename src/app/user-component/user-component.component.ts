@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { GamesComponent } from "../games/games.component";
+import { LoginComponent } from '../login/login.component';
 
 @Component({
   selector: 'app-user-component',
-  imports: [GamesComponent],
+  standalone: true,
+  imports: [GamesComponent,LoginComponent],
   templateUrl: './user-component.component.html',
   styleUrl: './user-component.component.css'
 })
